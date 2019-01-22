@@ -13,19 +13,19 @@
         android:background="@color/colorPrimary"
         android:elevation="20dp">
         <VideoView
-            android:layout_width="500dp"
-            android:layout_height="200dp"
+            android:layout_width="900dp"
+            android:layout_height="400dp"
             android:id="@+id/vv1"/>
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="100dp">
+        android:layout_margin="300dp">
 
         <VideoView
-            android:layout_width="500dp"
-            android:layout_height="200dp"
+            android:layout_width="900dp"
+            android:layout_height="400dp"
             android:id="@+id/vv2"/>
 
         <!--<ImageView-->
