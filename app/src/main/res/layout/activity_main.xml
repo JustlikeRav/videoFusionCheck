@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/colorPrimary">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:elevation="20dp">
-        <VideoView
-            android:layout_width="900dp"
-            android:layout_height="400dp"
-            android:id="@+id/vv1"/>
+        android:layout_width="900dp"
+        android:layout_height="400dp"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_view_epv"
+            android:layout_centerInParent="true"
+            app:use_controller="false"
+            app:resize_mode="fixed_width"/>
+
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="300dp">
+        android:layout_width="900dp"
+        android:layout_height="400dp"
+        android:translationX="350dp"
+        android:translationY="200dp">
 
-        <VideoView
-            android:layout_width="900dp"
-            android:layout_height="400dp"
-            android:id="@+id/vv2"/>
-
-        <!--<ImageView-->
-            <!--android:layout_width="500dp"-->
-            <!--android:layout_height="200dp"-->
-            <!--android:src="@color/colorAccent"/>-->
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_view_epv2"
+            android:layout_centerInParent="true"
+            app:use_controller="false"/>
 
     </FrameLayout>
-
 </RelativeLayout>
